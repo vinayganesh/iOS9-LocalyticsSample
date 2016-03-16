@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0726D81C99336300E02459 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0726D71C99336300E02459 /* Constants.m */; };
 		9FE12B0A1C986B1000189AFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE12B091C986B1000189AFE /* main.m */; };
 		9FE12B0D1C986B1000189AFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE12B0C1C986B1000189AFE /* AppDelegate.m */; };
 		9FE12B151C986B1000189AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE12B141C986B1000189AFE /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		0A4E4CC5DE6C15BF2B54B556 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9F0726D61C99336300E02459 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9F0726D71C99336300E02459 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		9FE12B051C986B1000189AFE /* NavigationControllerWithNib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationControllerWithNib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE12B091C986B1000189AFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FE12B0B1C986B1000189AFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +66,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9F0726CF1C9931D700E02459 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FE12B1F1C986B7500189AFE /* FirstViewController.h */,
+				9FE12B201C986B7500189AFE /* FirstViewController.m */,
+				9FE12B241C98714800189AFE /* SecondViewController.h */,
+				9FE12B251C98714800189AFE /* SecondViewController.m */,
+				9FE12B291C98752100189AFE /* LastViewController.h */,
+				9FE12B2A1C98752100189AFE /* LastViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9F0726D01C9931DF00E02459 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9FE12B0B1C986B1000189AFE /* AppDelegate.h */,
+				9FE12B0C1C986B1000189AFE /* AppDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		9F0726D11C9931E500E02459 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				9FE12B211C986B7500189AFE /* FirstViewController.xib */,
+				9FE12B261C98714800189AFE /* SecondViewController.xib */,
+				9FE12B2B1C98752100189AFE /* LastViewController.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		9F0726D21C99325000E02459 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F0726D61C99336300E02459 /* Constants.h */,
+				9F0726D71C99336300E02459 /* Constants.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		9FE12AFC1C986B1000189AFE = {
 			isa = PBXGroup;
 			children = (
@@ -84,17 +128,10 @@
 		9FE12B071C986B1000189AFE /* NavigationControllerWithNib */ = {
 			isa = PBXGroup;
 			children = (
-				9FE12B0B1C986B1000189AFE /* AppDelegate.h */,
-				9FE12B0C1C986B1000189AFE /* AppDelegate.m */,
-				9FE12B1F1C986B7500189AFE /* FirstViewController.h */,
-				9FE12B201C986B7500189AFE /* FirstViewController.m */,
-				9FE12B211C986B7500189AFE /* FirstViewController.xib */,
-				9FE12B241C98714800189AFE /* SecondViewController.h */,
-				9FE12B251C98714800189AFE /* SecondViewController.m */,
-				9FE12B261C98714800189AFE /* SecondViewController.xib */,
-				9FE12B291C98752100189AFE /* LastViewController.h */,
-				9FE12B2A1C98752100189AFE /* LastViewController.m */,
-				9FE12B2B1C98752100189AFE /* LastViewController.xib */,
+				9F0726D21C99325000E02459 /* Helpers */,
+				9F0726D11C9931E500E02459 /* Xibs */,
+				9F0726D01C9931DF00E02459 /* Delegates */,
+				9F0726CF1C9931D700E02459 /* Controllers */,
 				9FE12B141C986B1000189AFE /* Assets.xcassets */,
 				9FE12B161C986B1000189AFE /* LaunchScreen.storyboard */,
 				9FE12B191C986B1000189AFE /* Info.plist */,
@@ -247,6 +284,7 @@
 				9FE12B221C986B7500189AFE /* FirstViewController.m in Sources */,
 				9FE12B2C1C98752100189AFE /* LastViewController.m in Sources */,
 				9FE12B0A1C986B1000189AFE /* main.m in Sources */,
+				9F0726D81C99336300E02459 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

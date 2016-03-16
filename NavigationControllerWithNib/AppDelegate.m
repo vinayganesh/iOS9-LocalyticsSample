@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "FirstViewController.h"
 #import "Localytics.h"
+#import "Constants.h"
 
 @interface AppDelegate ()
 
@@ -47,7 +48,7 @@
 }
 
 -(void)initializeLocalytics:(NSDictionary*)launchOptions {
-    [Localytics autoIntegrate:@"YOUR APP KEY" launchOptions:launchOptions];
+    [Localytics autoIntegrate:[Constants getAPIKey] launchOptions:launchOptions];
     [Localytics setCustomerFirstName:@"Teller"];
 }
 
